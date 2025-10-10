@@ -1,0 +1,59 @@
+@mixin xxs {
+    @media (max-width: 400px) {
+        @content;
+    }
+}
+
+@mixin xs { //x-small: tout ce qui va etre entre 0 et 576 pixels
+    @media (min-width: 401px) and (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin xs-lt { //x-small: tout ce qui va etre entre 0 et 576 pixels
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin sm { //small
+    @media (min-width: 601px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin sm-lt {//small lower than: tout ce qui est small voire plus petit (téléphone)
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin md { //medium
+    @media (min-width: 769px) and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin md-lt { //medium lower than
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin lg { //large
+    @media (min-width: 993px) and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin lg-lt { //large lower than
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin xl { //x-large
+    @media (min-width: 1201px) {
+        @content;
+    }
+}

@@ -1,0 +1,52 @@
+@use '../../assets/styles/mixins' as mixin;
+
+.header{
+    position: relative;
+    padding: 10px 20px;
+    height: 86px;
+    box-shadow: var(--box-shadow-nav);
+    color: var(--primary);
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(51, 51, 117) 53%, rgba(106, 106, 248) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 90px;
+        cursor: pointer;
+    }
+}
+
+.headerList{
+    @include mixin.xs-lt{
+        display: none
+    }
+}
+
+.headerXs{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    color: white;
+    margin-left: auto;
+    transition: opacity 0.2s;
+    font-size: 24px; 
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 1rem;
+    
+    &:hover {
+      background-color: #0056b3;
+    }
+}

@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--text-color);
+    background: rgb(1,0,20);
+    background: linear-gradient(90deg, rgba(1,0,20,1) 0%, rgba(24,24,54,1) 53%, rgba(8,45,53,1) 100%);
+  }
+  
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0; 
+}
+
+img {
+    max-width: 100%;
+}
+
+input{
+    font-family: var(--font-family)
+}
+
+::placeholder {
+    font-size: var(--font-family)
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}

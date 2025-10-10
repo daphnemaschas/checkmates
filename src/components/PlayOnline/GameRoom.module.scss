@@ -1,0 +1,30 @@
+.chessBoardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.chessBoardImage {
+    width: 100%; /* La largeur de l'image est de 100% de la largeur du conteneur */
+    height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur pour maintenir les proportions */
+    max-height: 70vh;
+    margin-top: 10px;
+  }
+
+.undoButton {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 1rem 2rem;
+            width: 250px;
+            font-size: 1.2rem;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 1rem;
+            
+            &:hover {
+              background-color: #0056b3;
+            }
+  }

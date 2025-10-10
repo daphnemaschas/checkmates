@@ -1,0 +1,41 @@
+.MenuContainer {
+    position: absolute;
+    z-index: 10; // pour résoudre le problème d'ordre lors de l'affichage de HeaderMenu
+    top: 86px;
+    right: 10px;
+    width: 200px;
+    background-color: #ffffff; // Fond blanc pour le menu
+    border-radius: 8px; // Coins arrondis
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Ombre pour l'effet de flottement
+    overflow: hidden; // Pour gérer le débordement si nécessaire
+
+    ul {
+        padding: 0; // Enlève le padding du ul
+        margin: 0; // Enlève le margin du ul
+        list-style: none; // Enlève les points de la liste
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    li {
+        padding: 10px 15px; // Plus de padding pour plus d'espace
+        cursor: pointer;
+        list-style: none; // Enlève les points de la liste
+        border-bottom: 1px solid #e0e0e0; // Ligne de séparation entre les éléments
+        transition: background-color 0.2s, color 0.2s; // Transition pour la couleur de fond et la couleur du texte
+        &:last-child {
+            border-bottom: none; // Pas de ligne pour le dernier élément
+        }
+        &:hover {
+            background-color: rgba(95, 82, 245, 0.1); // Couleur de fond au survol
+            color: #5f52f5; // Couleur du texte au survol
+        }
+        
+    }
+    a {
+        text-decoration: none; // Enlève le soulignement du texte
+        color: inherit; // Hérite de la couleur du parent
+        &:hover {
+            color: #5f52f5; // Couleur du texte au survol
+        }
+    }
+}

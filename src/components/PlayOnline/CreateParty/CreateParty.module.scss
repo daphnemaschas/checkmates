@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Réglez la hauteur en fonction de vos besoins */
+  }
+
+.generateButton {
+    padding: 1rem 2rem;
+    width: 250px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+            
+    &:hover {
+        background-color: #0056b3;
+            }
+  }
