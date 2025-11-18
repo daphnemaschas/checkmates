@@ -13,7 +13,7 @@
     "chessboardjsx": "^2.4.7",
     "cors": "^2.8.5",
     "css-loader": "^6.8.1",
-    "express": "^4.18.3",
+    "express": "^4.21.2",
     "http-proxy-middleware": "^2.0.6",
     "mongodb": "^6.4.0",
     "mongoose": "^8.2.1",
